@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="xxx">
+
+            <div class="ccc">
+                <div class="item"><span>1</span><img src="image/istockphoto-186534154-612x612.jpg" alt=""></div>
+                <div class="item"><span>2</span><img src="image/istockphoto-471926619-612x612.jpg" alt=""></div>
+                <div class="item"><span>3</span><img src="image/istockphoto-495508534-612x612.jpg" alt=""></div>
+                <div class="item"><span>4</span><img src="image/istockphoto-483076291-612x612.jpg" alt=""></div>
+                <div class="item"><span>5</span><img src="image/istockphoto-501057465-612x612.jpg" alt=""></div>
+                <div class="item"><span>6</span><img src="image/istockphoto-537361232-612x612.jpg" alt=""></div>
+                <div class="item"><span>7</span><img src="image/istockphoto-584248074-612x612.jpg" alt=""></div>
+                <div class="item"><span>8</span><img src="image/istockphoto-697613666-612x612.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="div1">
+                <div class="controls-item">
+                    <h3>Layout</h3>
+                    <div class="inputGroup">
+                        <input type="radio" id="style1" value="horizontal"  name="layout">
+                        <label for="style1">Horizontal</label>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="radio" id="style2" value="vertical"  name="layout">
+                        <label for="style2">Vertical</label>
+                    </div>
+                </div>
+                <div class="controls-item">
+                    <h3>Control Button</h3>
+                    <div class="inputGroup">
+                        <input type="radio" id="c1" value="1"  name="ctrl">
+                        <label for="c1">Yes</label>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="radio" id="c2" value="0" name="ctrl">
+                        <label for="c2">No</label>
+                    </div>
+                </div>
+    
+                <div class="controls-item">
+                    <h3>Repeated</h3>
+                    <div class="inputGroup">
+                        <input type="radio" id="r1" value="1"  name="repeated">
+                        <label for="r1">Yes</label>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="radio" id="r2" value="0" name="repeated">
+                        <label for="r2">No</label>
+                    </div>
+                </div>
+    
+                <div class="controls-item">
+                    <h3>Thumbnail</h3>
+                    <div class="inputGroup">
+                        <input type="radio" id="t1" value="1"  name="thumbnail">
+                        <label for="t1">Yes</label>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="radio" id="t2" value="0" name="thumbnail">
+                        <label for="t2">No</label>
+                    </div>
+                </div>
+    
+                <div class="controls-item">
+                    <h3>Auto Change</h3>
+                    <div class="inputGroup">
+                        <input type="radio" id="a1" value="1"  name="autoChange">
+                        <label for="a1">Yes</label>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="radio" id="a2" value="0" name="autoChange">
+                        <label for="a2">No</label>
+                    </div>
+                </div>
+            </div>
+            <div class="div2">
+                            <div class="controls-item">
+                                <h3>Progress Bar</h3>
+                                <div class="inputGroup">
+                                    <input type="radio" id="pb1" value="1"  name="progressBar">
+                                    <label for="pb1">Yes</label>
+                                </div>
+                                <div class="inputGroup">
+                                    <input type="radio" id="pb2" value="0" name="progressBar">
+                                    <label for="pb2">No</label>
+                                </div>
+                            </div>
+                            <div class="controls-item">
+                                <h3>Navigation Visible</h3>
+                                <div class="inputGroup">
+                                    <input type="radio" id="ns1" value="1"  name="visible">
+                                    <label for="ns1">Yes</label>
+                                </div>
+                                <div class="inputGroup">
+                                    <input type="radio" id="ns2" value="0" name="visible">
+                                    <label for="ns2">No</label>
+                                </div>
+                            </div>
+                            <div class="controls-item">
+                                <h3>Navigation Style</h3>
+                                <div class="inputGroup">
+                                    <input type="radio" id="nstyle1" value="horizontal"  name="n_style">
+                                    <label for="nstyle1">Horizontal</label>
+                                </div>
+                                <div class="inputGroup">
+                                    <input type="radio" id="nstyle2" value="vertical"  name="n_style">
+                                    <label for="nstyle2">Vertical</label>
+                                </div>
+                            </div>
+                            <div class="controls-item">
+                                <h3>Navigation Icon Style</h3>
+                                <div class="inputGroup">
+                                    <input type="radio" id="nistyle1" value="circle"  name="ni_style">
+                                    <label for="nistyle1">Circle</label>
+                                </div>
+                                <div class="inputGroup">
+                                    <input type="radio" id="nistyle2" value="rectangle"  name="ni_style">
+                                    <label for="nistyle2">Rectangle</label>
+                            </div>
+                            <div class="code-snippet" id="codeSnippet">
+                                <pre>
+                                
+                                </pre>
+                                <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
+                                </div>
+                                
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<script src="Jquery3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="carousel.js"></script>
+    <script>
+        var data = {};
+        var html = $('.ccc').html();
+        var className = generateRandomString();
+        var code=``;
+        reinitializeCarousel(data);
+        function reinitializeCarousel(data) {
+            className = generateRandomString();
+            var tt = $('<div></div>').addClass(className);
+            tt.html(html);
+            $('.xxx').html(tt);
+            $(`.${className}`).carousel(data);
+           
+
+            if (Object.keys(data).length === 0){
+               code = `$('yourClass').carousel();`;
+            }else{
+            var code = `$('yourClass').carousel({`;
+            for (var key in data) {
+                if (data.hasOwnProperty(key)) {
+                    if(key=='navigation'){
+                        code+=`\n\u0020\u0020\u0020navigation:{`;
+                        for (var k in data[key]) {
+                            code+=`\n\u0020\u0020\u0020\u0020\u0020\u0020${k}:'${data[key][k]}',`
+                        }
+                        code+=`\n\u0020\u0020\u0020},`;
+                    }else{
+                        code+=`\n\u0020\u0020\u0020${key}:'${data[key]}',`
+                    }
+                }
+             }
+                 code+=`\n});`
+             }
+             $('.code-snippet pre').html(code)
+        }
+        function generateRandomString() {
+            let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let result = '';
+            for (let i = 0; i < 8; i++) {
+                result += characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+            return result;
+        }
+        function copyToClipboard() {
+            var codeSnippet = document.querySelector('#codeSnippet pre').innerText;
+            var tempTextarea = document.createElement('textarea');
+            tempTextarea.value = codeSnippet;
+            document.body.appendChild(tempTextarea);
+            tempTextarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextarea);
+            alert('Code copied to clipboard!');
+         }
+            $('input[name="thumbnail"]').on('change', function() {
+                if ($('input[name="thumbnail"]:checked').val() == "1") {
+                    $('input[name="visible"],input[name="n_style"], input[name="ni_style"]').prop('disabled', true).prop('checked', false);
+                } else {
+                    $('input[name="visible"]').prop('disabled', false);
+                }
+            });
+            $('input[name="visible"]').change(function() {
+                if ($(this).is(':checked') && ($(this).val() === '0' || $(this).is(':disabled'))) {
+                    $('input[name="n_style"], input[name="ni_style"]').prop('disabled', true).prop('checked', false);
+                } else {
+                    $('input[name="n_style"], input[name="ni_style"]').prop('disabled', false);
+                }
+             });
+             if (!($('input[name="visible"]:checked').length > 0)) {
+                    $('input[name="n_style"], input[name="ni_style"]').prop('disabled', true).prop('checked', false);
+                }
+
+
+        $('input[type="radio"]').change(function() {
+            data = {};
+            if ($('input[name="layout"]:checked').length > 0) {
+                data["layout"] = $('input[name="layout"]:checked').val();
+            }
+            if ($('input[name="ctrl"]:checked').length > 0) {
+                data["ctrlBtn"] = $('input[name="ctrl"]:checked').val() == '1'?true:false;
+            }
+            if ($('input[name="repeated"]:checked').length > 0) {
+                data["repeated"] = $('input[name="repeated"]:checked').val() == '1'?true:false;
+            }
+            if ($('input[name="thumbnail"]:checked').length > 0) {
+                data["thumbnail"] = $('input[name="thumbnail"]:checked').val() == '1'?true:false;
+            }
+            if ($('input[name="autoChange"]:checked').length > 0) {
+                data["autoChange"] = $('input[name="autoChange"]:checked').val() == '1'?true:false;
+            }
+            if ($('input[name="progressBar"]:checked').length > 0) {
+                data["progressBar"] = $('input[name="progressBar"]:checked').val() == '1'?true:false;
+            }
+
+            if ($('input[name="visible"]:checked:not(:disabled)').length > 0) {
+                var nav = {};
+                nav["visible"] = $('input[name="visible"]:checked').val() == '1';
+                if ($('input[name="n_style"]:checked').length > 0) {
+                    nav["style"] = $('input[name="n_style"]:checked').val();
+                }
+                if ($('input[name="ni_style"]:checked').length > 0) {
+                    nav["iconStyle"] = $('input[name="ni_style"]:checked').val();
+                }
+                data["navigation"] = nav;
+            }
+
+            reinitializeCarousel(data);
+        });
+/*
+            layout:'horizontal',
+            ctrlBtn:true,
+            repeated:true,
+            thumbnail:false,
+            navigation:{
+                visible:true,
+                style:'horizontal',
+                iconStyle:'circle'
+            },
+            autoChange:true,
+            progressBar:true,
+        }
+*/
+    </script>
+</body>
+</html>
